@@ -1,2 +1,5 @@
 # Fine-Tune-BERT-Transformer-with-Spacy-3-for-NER
-Learn how to fine-tune a BERT model to predict entities based on Label you have done while making your dataset from scientific abstracts. 
+
+## Quick Intro
+In this github repo, I will show how to train a BERT Transformer for Name Entity Recognition task using the latest Spacy 3 library. I am going to train an NER classifier to extract entities from scientific abstracts.
+
