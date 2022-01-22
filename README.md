@@ -25,3 +25,28 @@ You might get confused about **UBIAI**, following are the features about UBIAI T
 * Team collaboration to share annotation tasks
 * Direct annotation export to IOB format
 
+## Model Training
+
+* Open a new Google Colab project and make sure to select GPU as hardware accelerator in the notebook settings.
+* In order to accelerate the training process, we need to run parallel processing on our GPU. To this end we install the NVIDIA 9.2 cuda library:
+
+```bash
+  !wget https://developer.nvidia.com/compute/cuda/9.2/Prod/local_installers/cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64 -O cuda-repo-ubuntu1604–9–2-local_9.2.88–1_amd64.deb
+```
+
+```bash
+  !dpkg -i cuda-repo-ubuntu1604–9–2-local_9.2.88–1_amd64.deb
+```
+
+```bash
+  !apt-key add /var/cuda-repo-9–2-local/7fa2af80.pub
+```
+
+```bash
+  !apt-get update
+```
+
+```bash
+  !apt-get install cuda-9.2
+```
+
