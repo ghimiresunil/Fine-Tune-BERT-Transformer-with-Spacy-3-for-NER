@@ -1,5 +1,7 @@
 # Fine-Tune-BERT-Transformer-with-Spacy-3-for-NER
 
+![spacy](https://user-images.githubusercontent.com/40186859/150681117-53fdce05-e9d0-456c-b8a8-ef6feafc311a.jpg)
+
 ## Quick Intro
 In this github repo, I will show how to train a BERT Transformer for Name Entity Recognition task using the latest Spacy 3 library. I am going to train an NER classifier to extract entities from scientific abstracts. 
 
