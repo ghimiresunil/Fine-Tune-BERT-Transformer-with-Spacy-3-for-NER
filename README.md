@@ -186,3 +186,92 @@ _**P.S: if you get the error cupy_backends.cuda.api.driver.CUDADriverError: CUDA
 * If everything went correctly, the model will generate the model scores and losses  
 
 ### !!! Hooray, the model will be saved under folder model-best. The model scores are located in meta.json file inside the model-best folder !!!
+
+## Inference NER
+- Clone this repository on your local machine:
+```
+https://github.com/ghimiresunil/Fine-Tune-BERT-Transformer-with-Spacy-3-for-NER.git
+```
+- Create a virtual environment
+```
+python -m venv venv
+source venv/bin/activate  # On Linux/Mac
+venv\Scripts\activate  # On Windows
+```
+- Install the required dependencies:
+```
+pip install -r requirements.txt
+```
+- Mail to `info@sunilghimire.com.np` for Fine tune NER Model
+- Run the program
+```
+uvicorn api:app --reload
+```
+
+## Build docker image
+- Build the Docker image using the updated Dockerfile:
+```
+docker build -t my-fastapi-app .
+```
+Note: This command builds the Docker image with the tag `my-fastapi-app`.
+- Run the Docker container:
+```
+docker run -it --rm -p 80:80 my-fastapi-app bash
+```
+
+## Final Output
+```
+{
+  "parsed_output": {
+    "Name": "Sunil Ghimire",
+    "Phone": "+977 9841070311",
+    "EMAIL": "info@sunilghimire.com.np",
+    "Hard Skills": [
+      "python",
+      "java",
+      "c",
+      "dsa",
+      "oops",
+      "html",
+      "pandas",
+      "numpy",
+      "scikit",
+      "keras",
+      "tensorflow",
+      "flask",
+      "git",
+      "heroku",
+      "git",
+      "flask",
+      "heroku",
+      "python",
+      "cnn",
+      "clahe",
+      "transfer learning",
+      "opencv",
+      "clahe",
+      "bm3d",
+      "xception",
+      "resnet50v2",
+      "cnn",
+      "rnn",
+      "lstm",
+      "cnn",
+      "opencv",
+      "data visualization",
+      "cctv",
+      "rnn",
+      "lstm",
+      "inceptionv3",
+      "lof",
+      "correlation map",
+      "smote",
+      "random forest classifier",
+      "inter-quartile range (iqr)",
+      "smote",
+      "correlation map",
+      "random forest classifier"
+    ]
+  }
+}
+```
