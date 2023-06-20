@@ -1,0 +1,4 @@
+transformers
+spacy-transformers
+PyMuPDF
+fastapi[all]
