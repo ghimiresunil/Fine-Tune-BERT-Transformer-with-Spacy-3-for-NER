@@ -30,7 +30,7 @@ async def root():
 
 
 @app.post("/extract_ner/")
-async def classifydoc(uploaded_file: UploadFile = File(...)):
+async def extractner(uploaded_file: UploadFile = File(...)):
     nlp = spacy.load("./models/model-best")
     textual_content = read_file(uploaded_file)
     # print(textual_content)
